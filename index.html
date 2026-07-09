@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유원희 (Warren Yoo) | AX 마케팅 전문 컨설턴트 & 강사</title>
+  <meta name="description" content="16년 실전 마케팅 내공과 AI 기술의 융합. 실전형 AX 마케팅 전략 수립 및 컨설팅 제공.">
+
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="유원희 | AX 마케팅 전문 컨설턴트">
+  <meta property="og:description" content="16년 실전 마케팅 내공, AI를 만나 기업의 실질적 성과로 폭발하다.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="avatar.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Blur Orbs for Dark Mode / Premium Aesthetic -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-accent">유원희 (Warren Yoo)</span>
+      </div>
+
+      <!-- Center Nav Tabs -->
+      <nav class="nav-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="tab-profile" role="tab" aria-selected="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+          프로필
+        </button>
+        <button class="tab-btn" data-tab="tab-courses" role="tab" aria-selected="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          강의 과정
+        </button>
+      </nav>
+
+      <!-- Right Actions: Theme Toggle & PDF Download -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="테마 전환" title="테마 전환">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ====================================================
+         TAB 1: 프로필 (Interactive Resume)
+         ==================================================== -->
+    <div id="tab-profile" class="tab-content active">
+
+      <!-- Hero Section -->
+      <section class="hero-section card">
+        <div class="hero-grid">
+          <div class="hero-image-area">
+            <div class="avatar-frame">
+              <img src="avatar.png" alt="유원희 프로필 사진" class="avatar-img">
+            </div>
+            <div class="status-badge">
+              <span class="pulse-dot"></span> AX 마케팅 컨설팅 가능
+            </div>
+          </div>
+
+          <div class="hero-info-area">
+            <h1 class="profile-name">유원희 <span class="en-name">(Warren Yoo)</span></h1>
+            <p class="profile-title">AX 마케팅 전문 컨설턴트 & 강사</p>
+
+            <blockquote class="profile-slogan">
+              "16년의 실전 마케팅 내공, AI를 만나 기업의 실질적 성과로 폭발하다."
+            </blockquote>
+
+            <p class="profile-description">
+              AI는 도구일 뿐, 핵심은 <strong>'비즈니스에 어떻게 적용(Implementation)할 것인가'</strong>입니다.<br>
+              현업에 즉시 적용 가능한 '실전형 AX 마케팅'의 명쾌한 해답을 제시합니다.
+            </p>
+
+            <div class="hero-contacts">
+              <button class="contact-pill" id="contact-email" data-clipboard="warren@bp-u.net" title="클릭하여 이메일 주소 복사">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>warren@bp-u.net</span>
+                <span class="tooltip">복사하기</span>
+              </button>
+              <button class="contact-pill" id="contact-phone" data-clipboard="010-9092-7631" title="클릭하여 전화번호 복사">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>010-9092-7631</span>
+                <span class="tooltip">복사하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Layout Grid -->
+      <div class="content-grid">
+
+        <!-- Left Column: Core Strengths & Teaching Competency -->
+        <div class="left-col">
+
+          <!-- Core Identity Card -->
+          <section class="section-card card" id="core-identity">
+            <h2 class="section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              CORE IDENTITY
+            </h2>
+
+            <div class="identity-list">
+              <div class="identity-item">
+                <div class="identity-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6z"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <div class="identity-details">
+                  <h3>Strength (강점)</h3>
+                  <p>16년 이상의 마케팅 경력을 기반으로 한 중소기업 현장 밀착형 컨설팅</p>
+                </div>
+              </div>
+
+              <div class="identity-item">
+                <div class="identity-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <div class="identity-details">
+                  <h3>Expertise (전문 분야)</h3>
+                  <p>AI 기반 맞춤형 마케팅 implementation 및 성과 창출 전략 수립</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- AX Teaching Competency Card -->
+          <section class="section-card card" id="teaching-competency">
+            <h2 class="section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><path d="m12 3-1.912 5.886H3.82l4.817 3.5H6.725L12 16l5.275-3.614h-1.912l4.817-3.5h-6.268Z"/><path d="M12 16v6"/><path d="M9 22h6"/></svg>
+              AX TEACHING COMPETENCY
+            </h2>
+            <p class="section-subtitle">"창업기업 및 1인기업을 위한 최적의 마케팅 솔루션 제공"</p>
+
+            <div class="competency-grid">
+              <div class="competency-card">
+                <div class="comp-header">
+                  <span class="comp-badge">실습 중심</span>
+                  <h4>다중 AI 툴 융합 실습</h4>
+                </div>
+                <p>기획부터 이미지·영상을 아우르는 AI 툴 연계 콘텐츠 제작 프로세스 전수</p>
+              </div>
+
+              <div class="competency-card">
+                <div class="comp-header">
+                  <span class="comp-badge">맞춤 설계</span>
+                  <h4>맞춤형 교육 설계</h4>
+                </div>
+                <p>이론 위주의 설명 대신, 이슈 해결을 위한 '사례 연구'와 '툴 실습'을 결합한 교육 설계</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education & Credentials Card -->
+          <section class="section-card card" id="education-credentials">
+            <h2 class="section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+              EDUCATION & CREDENTIALS
+            </h2>
+
+            <div class="edu-credentials-container">
+              <div class="credential-item">
+                <div class="badge-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <strong>경영지도사 (마케팅 분야)</strong>
+                  <span class="sub-label">국가전문자격</span>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <span class="edu-period">석사</span>
+                <div class="edu-details">
+                  <strong>한양대학교 경영대학원</strong>
+                  <span class="edu-spec">마케팅관리 전공 (졸업)</span>
+                </div>
+              </div>
+
+              <div class="edu-item">
+                <span class="edu-period">학사</span>
+                <div class="edu-details">
+                  <strong>서강대학교</strong>
+                  <span class="edu-spec">화학 전공 (졸업)</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Professional Career & Consulting -->
+        <div class="right-col">
+
+          <!-- Career Timeline -->
+          <section class="section-card card" id="professional-career">
+            <h2 class="section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              PROFESSIONAL CAREER
+            </h2>
+            <p class="section-subtitle">"풍부한 현장 실무 및 비즈니스 경영 경험이 살아있는 강사"</p>
+
+            <div class="timeline">
+              <!-- Career 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot active"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-period">2021.01 ~ 현재</span>
+                    <h3 class="company-name">비피유 / (주)지티유</h3>
+                  </div>
+                  <h4 class="role-name">대표 / 대표이사</h4>
+                  <ul class="task-list">
+                    <li>AI 기반 디지털 마케팅 전략 수립 및 비즈니스 모델(BM) 고도화</li>
+                    <li>중소기업 경영·기술 컨설팅 및 전문 직무 강의 수행</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Career 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-period">2019.05 ~ 2020.08</span>
+                    <h3 class="company-name">엘켐코리아</h3>
+                  </div>
+                  <h4 class="role-name">상무</h4>
+                  <ul class="task-list">
+                    <li>신규 기술사업화 및 기업 마케팅 전략 총괄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Career 3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-period">1997.04 ~ 2018.09</span>
+                    <h3 class="company-name">다우케미칼 (Dow Chemical)</h3>
+                  </div>
+                  <h4 class="role-name">마케팅 매니저 (Marketing Manager)</h4>
+                  <ul class="task-list">
+                    <li>글로벌 마케팅 기획 및 주도적 기술사업화 추진</li>
+                    <li>해외 지사 연계 글로벌 프로젝트 리드</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Consulting & Evaluation -->
+          <section class="section-card card" id="consulting-evaluation">
+            <h2 class="section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              CONSULTING & EVALUATION
+            </h2>
+            <p class="section-subtitle">"현장의 니즈와 마켓 트렌드를 꿰뚫는 전문가"</p>
+
+            <div class="consulting-blocks">
+              <div class="consulting-block-item">
+                <div class="block-title">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                  <h4>마케팅 컨설팅</h4>
+                </div>
+                <p>중소벤처기업부 비즈니스지원단 자문위원, 경기도경제과학진흥원 기업옴부즈만/전문컨설턴트, 중소기업중앙회 컨설턴트 등 다수 공공기관에 위촉되어 중소기업 자문 중</p>
+              </div>
+
+              <div class="consulting-block-item">
+                <div class="block-title">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 17V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14"/><path d="M9 10h6"/><path d="M9 14h6"/><path d="M9 6h6"/></svg>
+                  <h4>평가 및 심사</h4>
+                </div>
+                <p>2026년 초기창업패키지 선정평가위원, 경기콘텐츠진흥원 평가심의위원 등 공공기관 마케팅 콘텐츠 과제 심사·평가 다수 수행</p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+
+    </div><!-- /tab-profile -->
+
+
+    <!-- ====================================================
+         TAB 2: 강의 과정
+         ==================================================== -->
+    <div id="tab-courses" class="tab-content">
+
+      <!-- Courses Hero Banner -->
+      <section class="courses-hero card">
+        <div class="courses-hero-inner">
+          <span class="courses-eyebrow">AX 마케팅 실전 강의</span>
+          <h2 class="courses-title">온라인 비즈니스를 처음부터<br>끝까지 완성하는 6단계 과정</h2>
+          <p class="courses-desc">홈페이지 구축부터 업무자동화까지,<br>창업기업 및 1인기업을 위한 실전 중심 커리큘럼으로 비즈니스 디지털 전환을 완성합니다.</p>
+        </div>
+      </section>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid">
+
+        <!-- Course 1 -->
+        <div class="course-card card">
+          <div class="course-number">01</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Homepage 만들기</h3>
+            <p class="course-desc">AI 도구를 활용해 전문적인 홈페이지를 빠르게 제작하는 방법을 배웁니다. 도메인 설정부터 페이지 구성, 디자인 적용까지 실습 중심으로 진행합니다.</p>
+            <ul class="course-points">
+              <li>AI 기반 홈페이지 빌더 활용법</li>
+              <li>브랜드 아이덴티티 반영 디자인</li>
+              <li>모바일 최적화 & 반응형 레이아웃</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">실습 중심</span>
+            <span class="course-tag">AI 툴 활용</span>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card card">
+          <div class="course-number">02</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">상세 Page 만들기</h3>
+            <p class="course-desc">제품·서비스 상세 페이지를 고객 전환율 중심으로 기획하고 제작하는 방법을 익힙니다. 구매 결정을 이끄는 카피라이팅과 레이아웃 전략을 실습합니다.</p>
+            <ul class="course-points">
+              <li>고전환율 상세 페이지 구조 설계</li>
+              <li>AI 카피라이팅으로 설득력 있는 문구 작성</li>
+              <li>이미지·영상 활용 비주얼 스토리텔링</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">전환율 최적화</span>
+            <span class="course-tag">카피라이팅</span>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card card">
+          <div class="course-number">03</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">SEO 구성하기</h3>
+            <p class="course-desc">검색 엔진에서 상위 노출되기 위한 SEO 전략을 실전 중심으로 학습합니다. 키워드 리서치부터 메타 태그, 구조화 데이터까지 단계별로 적용합니다.</p>
+            <ul class="course-points">
+              <li>AI 활용 키워드 리서치 & 경쟁 분석</li>
+              <li>온페이지 SEO 최적화 (메타, 헤딩, URL)</li>
+              <li>Google Search Console 연동 및 성과 측정</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">검색 상위 노출</span>
+            <span class="course-tag">트래픽 증대</span>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card card">
+          <div class="course-number">04</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">SNS 구축하기</h3>
+            <p class="course-desc">브랜드 목적에 맞는 SNS 채널을 전략적으로 구축하고 운영하는 방법을 배웁니다. 인스타그램·유튜브·블로그 채널별 특성과 최적화 전략을 다룹니다.</p>
+            <ul class="course-points">
+              <li>채널별 타깃 분석 및 포지셔닝 전략</li>
+              <li>프로필·피드·채널 브랜딩 셋업</li>
+              <li>알고리즘 이해 및 초기 팔로워 확보 전략</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">채널 전략</span>
+            <span class="course-tag">브랜딩</span>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card card">
+          <div class="course-number">05</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect width="15" height="14" x="1" y="5" rx="2" ry="2"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">SNS 콘텐츠 제작하기</h3>
+            <p class="course-desc">AI 툴을 활용해 이미지·영상·카드뉴스 등 다양한 SNS 콘텐츠를 빠르게 제작하는 실전 스킬을 익힙니다. 바이럴을 이끄는 콘텐츠 기획법까지 다룹니다.</p>
+            <ul class="course-points">
+              <li>AI 이미지·영상 생성 툴 실습 (Midjourney, Runway 등)</li>
+              <li>바이럴 콘텐츠 기획 프레임워크</li>
+              <li>콘텐츠 캘린더 & 자동화 운영 시스템 구축</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">AI 콘텐츠 제작</span>
+            <span class="course-tag">바이럴 전략</span>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card card">
+          <div class="course-number">06</div>
+          <div class="course-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/><circle cx="18" cy="6" r="2"/></svg>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">업무 자동화 하기</h3>
+            <p class="course-desc">반복되는 운영 업무를 노코드 자동화 툴로 연결해 1인기업·소규모 조직도 효율적으로 운영하는 방법을 익힙니다. 고객 응대부터 데이터 관리까지 자동화 워크플로우를 직접 구축합니다.</p>
+            <ul class="course-points">
+              <li>n8n을 활용한 고객 CS 통합 관리</li>
+              <li>반복 업무 워크플로우 설계 및 자동 실행</li>
+              <li>각종 서비스(메일·메신저·시트) 연동 자동화</li>
+            </ul>
+          </div>
+          <div class="course-footer">
+            <span class="course-tag">업무 자동화</span>
+            <span class="course-tag">n8n</span>
+          </div>
+        </div>
+
+      </div><!-- /courses-grid -->
+
+      <!-- CTA Strip -->
+      <section class="courses-cta card">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h3>강의 문의 & 커리큘럼 맞춤 설계</h3>
+            <p>기업 내부 교육, 공공기관 강의, 개인 수강 등 목적에 맞게 커리큘럼을 조정해 드립니다.</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary contact-pill" data-clipboard="warren@bp-u.net">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              warren@bp-u.net
+              <span class="tooltip">복사하기</span>
+            </button>
+            <button class="btn btn-secondary contact-pill" data-clipboard="010-9092-7631">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              010-9092-7631
+              <span class="tooltip">복사하기</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /tab-courses -->
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 BPU. Co. All rights reserved.</p>
+      <div class="footer-meta">
+        <span>본 포트폴리오는 원본 PDF 파일의 내용을 기반으로 제작되었습니다.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Registration Modal -->
+  <div id="reg-overlay" class="reg-overlay" role="dialog" aria-modal="true" aria-labelledby="reg-modal-title">
+    <div class="reg-modal card">
+
+      <!-- Modal Header -->
+      <div class="reg-header">
+        <div>
+          <p class="reg-course-label" id="reg-course-label"></p>
+          <h2 class="reg-title" id="reg-modal-title">수강 신청</h2>
+        </div>
+        <button class="reg-close icon-btn" id="reg-close" aria-label="닫기">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Registration Form: Name + Email + Phone -->
+      <form id="reg-form" class="reg-form" novalidate>
+        <div class="reg-field">
+          <label for="reg-name">이름</label>
+          <input type="text" id="reg-name" placeholder="실명을 입력하세요" autocomplete="name" required>
+        </div>
+        <div class="reg-field">
+          <label for="reg-email">이메일</label>
+          <input type="email" id="reg-email" placeholder="example@email.com" autocomplete="email" required>
+        </div>
+        <div class="reg-field">
+          <label for="reg-phone">전화번호</label>
+          <input type="tel" id="reg-phone" placeholder="010-0000-0000" autocomplete="tel" required>
+        </div>
+        <p class="reg-error" id="reg-error"></p>
+        <button type="submit" class="btn btn-primary reg-btn">신청 메일 보내기</button>
+      </form>
+
+      <!-- Success State -->
+      <div id="reg-success" class="reg-success hidden">
+        <div class="success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>신청이 완료되었습니다!</h3>
+        <p id="reg-success-msg"></p>
+        <button class="btn btn-primary" id="reg-success-close">확인</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Registration Modal -->
+
+  <!-- Script for interactivity -->
+  <script src="app.js"></script>
+</body>
+</html>
