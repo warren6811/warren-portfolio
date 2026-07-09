@@ -1,0 +1,34 @@
+<svg width="640" height="220" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow1" cx="0%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#3b4cca" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3b4cca" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="100%" cy="100%" r="75%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="640" height="220" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="640" height="220" fill="#0a0e1a"/>
+    <rect x="0" y="0" width="640" height="220" fill="url(#glow1)"/>
+    <rect x="0" y="0" width="640" height="220" fill="url(#glow2)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="639" height="219" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <text x="50%" y="78" text-anchor="middle" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="30" font-weight="700" fill="#f8fafc">유원희 (Warren Yoo)</text>
+  <text x="50%" y="112" text-anchor="middle" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="18" font-weight="600" fill="#a5b4fc">AX 마케팅 전문 컨설턴트 &amp; 강사</text>
+
+  <g>
+    <rect x="185" y="148" width="270" height="52" rx="12" fill="url(#btnGrad)"/>
+    <text x="320" y="181" text-anchor="middle" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#0a0e1a">포트폴리오 바로가기 →</text>
+  </g>
+</svg>
